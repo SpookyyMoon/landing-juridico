@@ -235,7 +235,6 @@ body{
   margin-right: 10%;
   display: flex;
   flex-direction: column;
-  border: dotted;
   justify-content: center;
   align-items: center;
 }
@@ -349,6 +348,7 @@ body{
   align-items: center;
   justify-content: space-evenly;
   margin-bottom: 2em;
+  font-weight: 600;
 }
 
 .testimonial-exterior{
@@ -440,4 +440,72 @@ body{
 #imagen-faq{
   height: 20em;
   align-self: center;
+}
+
+#footer{
+  height: 22em;
+  background-color: #c32d2dc7;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+#footer #titulo-footer{
+  font-size: 2.5em;
+  font-weight: 800;
+  padding-left: 2em;
+  padding-top: 0.5em;
+}
+
+#footer #contenedor{
+  display: flex;
+  flex-direction: row;
+  height: 17em;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.columna{
+  display: flex;
+  flex-direction: column;
+  height: 13em;
+  width: 15em;
+}
+
+.titulo-columna{
+  font-size: 1.3em;
+  font-weight: 600;
+  width: 15em;
+  text-underline-offset: 0.2em;
+}
+
+.opcion-footer{
+  height: 13em;
+  font-size: 1.2em;
+  width: 12em;
+}
+
+p.opcion-footer{
+  margin: 0em;
+  padding: 0em;
+  height: 2em;
+}
+
+#contenedor2{
+  display: flex;
+  flex-direction: column;
+  height: 17em;
+  width: 15em;
+}
+
+#contenedor2 #logo{
+  margin: 0em;
+  padding: 0em;
+  height: 11em;
+}
+
+#contenedor2 #copyright{
+  margin: 0em;
+  padding: 0em;
+  height: 5em;
 }
