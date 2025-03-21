@@ -1,0 +1,336 @@
+/*FUENTES*/
+.abhaya-libre-regular {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.abhaya-libre-medium {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.abhaya-libre-semibold {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.abhaya-libre-bold {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.abhaya-libre-extrabold {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+/*ESTILO*/
+body{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin: 0em;
+}
+
+/*HEADER*/
+#header{
+  display: flex;
+  flex-direction: row;
+  margin-left: 25em;
+  margin-right: 15em;
+  height: 3.3em;
+}
+
+#header #contacto{
+  display: flex;
+  flex-direction: row;
+  width: 35%;
+  justify-content: space-evenly;
+}
+
+#header #contacto #correo{
+  display: flex;
+  flex-direction: row;
+}
+
+#header #contacto #correo p#correo{
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+#header #contacto #correo #correo_svg{
+  height: 1em;
+  padding-top: 1.3em;
+  padding-right: 0.5em;
+}
+
+#header #contacto #telefono{
+  display: flex;
+  flex-direction: row;
+}
+
+#header #contacto #telefono #telefono_svg{
+  height: 1em;
+  padding-top: 1.3em;
+  padding-right: 0.5em;
+}
+
+#header #contacto #telefono p#telefono{
+  font-weight: bold;
+  font-size: 1.1em;
+  padding-top: 0.05em;
+}
+
+#header #sociales{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 10em;
+  width: 25%;
+  justify-content: space-evenly;
+}
+
+#header #boton_cita{
+  display: flex;
+  background-color: #C32D2D;
+  width: 10%;
+  justify-content: space-evenly;
+}
+
+#header #boton_cita p{
+  margin-top: 0.6em;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+#separador{
+  border: solid #66666690 0.1em;
+}
+
+/*MENU*/
+#menu{
+  display: flex;
+  flex-direction: row;
+  height: 6em;
+}
+
+#menu #logo{
+  width: 45%;
+  display: flex;
+  justify-content: center;
+}
+
+#menu #logo p{
+  margin: 0em;
+  padding-top: 1em;
+  font-weight: bold;
+  font-size: 2em;
+  color: #C32D2D;
+  text-shadow: 0em 0.06em 0em #00000044;
+}
+
+#menu #opciones{
+  width: 55%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  column-gap: 1em;
+}
+
+#menu #opciones p{
+  margin: 0em;
+  padding-top: 1.5em;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+/*HERO*/
+#hero{
+  background-image: url(./public/images/fondo-carrusel-117.png);
+  height: 35em;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  position: relative;
+}
+
+#hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
+#hero #titulo{
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-weight: bold;
+  font-size: 1.7em;
+  font-weight: 700;
+  margin-left: 12em;
+  margin-top: 5em;
+  width: 20em;
+}
+
+#hero #subtitulo{
+  position: relative;
+  z-index: 2;
+  color: white;
+  margin-left: 17em;
+  margin-top: 1em;
+  width: 30em;
+  font-size: 1.2em;
+}
+
+#botonera{
+  width: 20%;
+  height: 4em;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  margin-left: 24em;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  justify-content: space-between;
+  column-gap: 1.5em;
+}
+
+#botonera #boton1{
+  background-color: #C32D2D;
+  border-radius: 0.5em;
+  width: 11em;
+  box-shadow: rgba(255, 255, 255, 0.072) 0em 0em 0.2em;
+  padding-left: 1em;
+  align-content: center;
+}
+
+#botonera #boton2{
+  border: solid white 0.1em;
+  border-radius: 0.5em;
+  width: 11em;
+  box-shadow: rgba(255, 255, 255, 0.072) 0em 0em 0.2em;
+  padding-left: 1em;
+  align-content: center;
+}
+
+/*CUERPO*/
+#cuerpo{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  border: dotted;
+  justify-content: center;
+  align-items: center;
+}
+
+/*SERVICIOS*/
+.contenedor{
+  border: solid black 0.1em;
+  border-radius: 0.8em;
+  width: 20%;
+  height: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.titulo-contenedor{
+  margin-top: 1em;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.texto-contenedor{
+  margin-top: 1em;
+}
+
+.icono-contenedor{
+  margin-top: 1em;
+  height: 5em;
+  width: 5em;
+}
+
+.boton-contenedor{
+  align-content: center;
+  margin-top: 1em;
+  background-color: #C32D2D;
+  color: white;
+  border-radius: 1em;
+  width: 6em;
+  height: 2em;
+}
+
+#servicios{
+  display: grid;
+  justify-content: space-evenly;
+  height: 50em;
+  align-content: center;
+  width: 80em;
+  row-gap: 3em;
+  border: dotted green;
+}
+
+#cuerpo #servicios #contenedor1{
+  height: 18em;
+  width: 18em;
+  grid-row: 1;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+#cuerpo #servicios #contenedor2{
+  height: 18em;
+  width: 18em;
+  grid-row: 1;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+#cuerpo #servicios #contenedor3{
+  height: 18em;
+  width: 18em;
+  grid-row: 1;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+#cuerpo #servicios #contenedor4{
+  height: 18em;
+  width: 18em;
+  grid-row: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+#cuerpo #servicios #contenedor5{
+  height: 18em;
+  width: 18em;
+  grid-row: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+#cuerpo #servicios #contenedor6{
+  height: 18em;
+  width: 18em;
+  grid-row: 2;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
