@@ -234,6 +234,7 @@ body{
   margin-left: 10%;
   margin-right: 10%;
   display: flex;
+  flex-direction: column;
   border: dotted;
   justify-content: center;
   align-items: center;
@@ -270,7 +271,7 @@ body{
 .boton-contenedor{
   align-content: center;
   margin-top: 1em;
-  background-color: #C32D2D;
+  background-color: #c32d2dc7;
   color: white;
   border-radius: 1em;
   width: 6em;
@@ -284,7 +285,6 @@ body{
   align-content: center;
   width: 80em;
   row-gap: 3em;
-  border: dotted green;
 }
 
 #cuerpo #servicios #contenedor1{
@@ -333,4 +333,52 @@ body{
   grid-row: 2;
   grid-column-start: 3;
   grid-column-end: 4;
+}
+
+/*TESTIMONIALS*/
+#testimonials{
+  display: grid;
+  justify-content: space-evenly;
+  height: 40em;
+  align-content: center;
+  width: 80em;
+  row-gap: 3em;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.testimonial-exterior{
+  height: 35em;
+  width: 20em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.testimonial-interior{
+  border: solid;
+  border-radius: 2em;
+  background-color: #c32d2dc7;
+  color: white;
+  height: 35em;
+  width: 20em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.testimonial-texto{
+  margin-top: 3em;
+  width: 15em;
+}
+
+.testimonial-nombre{
+  margin-top: 1em;
 }
