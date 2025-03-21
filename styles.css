@@ -348,6 +348,7 @@ body{
   align-content: center;
   align-items: center;
   justify-content: space-evenly;
+  margin-bottom: 2em;
 }
 
 .testimonial-exterior{
@@ -381,4 +382,62 @@ body{
 
 .testimonial-nombre{
   margin-top: 1em;
+}
+
+/*FAQ*/
+.pregunta{
+  border: solid #706F6F;
+  height: 4em;
+  border-radius: 1em;
+  width: 40;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.texto-pregunta{
+  font-size: 1.53em;
+  font-weight: 500em;
+  padding-left: 1em;
+  width: 38em;
+}
+
+.flecha-faq{
+  padding-left: 5em;
+  padding-right: 1.5em;
+}
+
+#faq{
+  display: flex;
+  flex-direction: column;
+  height: 40em;
+  width: 80em;
+  padding-left: 6em;
+}
+
+#faq #titulo{
+  height: 1em;
+  font-size: 6em;
+}
+
+#faq #contenedor{
+  display: flex;
+  flex-direction: row;
+  height: 25em;
+  width: 80em;
+}
+
+#preguntas{
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  width: 50em;
+  height: 20em;
+  row-gap: 1em;
+  margin-right: 1.5em;
+}
+
+#imagen-faq{
+  height: 20em;
+  align-self: center;
 }
