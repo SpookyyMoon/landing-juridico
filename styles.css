@@ -97,17 +97,18 @@ body{
 }
 
 #header #boton_cita{
-  display: flex;
+  align-content: center;
   background-color: #C32D2D;
   width: 10%;
-  justify-content: space-evenly;
 }
 
 #header #boton_cita p{
-  margin-top: 0.6em;
   color: white;
   font-weight: bold;
   font-size: 1.1em;
+  text-align: center;
+  padding: 0em;
+  margin: 0em;
 }
 
 #separador{
@@ -206,8 +207,7 @@ body{
   color: white;
   font-weight: bold;
   font-size: 1em;
-  justify-content: space-between;
-  column-gap: 1.5em;
+  justify-content: space-evenly;
 }
 
 #botonera #boton1{
@@ -215,18 +215,30 @@ body{
   border-radius: 0.5em;
   width: 11em;
   box-shadow: rgba(255, 255, 255, 0.072) 0em 0em 0.2em;
-  padding-left: 1em;
   align-content: center;
 }
+
+#botonera #boton1 p{
+  text-align: center;
+  padding: 0em;
+  margin: 0em;
+}
+
 
 #botonera #boton2{
   border: solid white 0.1em;
   border-radius: 0.5em;
   width: 11em;
   box-shadow: rgba(255, 255, 255, 0.072) 0em 0em 0.2em;
-  padding-left: 1em;
   align-content: center;
 }
+
+#botonera #boton2 p{
+  text-align: center;
+  padding: 0em;
+  margin: 0em;
+}
+
 
 /*CUERPO*/
 #cuerpo{
@@ -508,4 +520,5 @@ p.opcion-footer{
   margin: 0em;
   padding: 0em;
   height: 5em;
+  text-align: center;
 }
