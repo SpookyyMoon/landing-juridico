@@ -39,6 +39,10 @@ body{
 }
 
 /*HEADER*/
+.social-img{
+  height: 3.5em;
+}
+
 #header{
   display: flex;
   flex-direction: row;
@@ -143,6 +147,15 @@ body{
   justify-content: space-evenly;
   flex-direction: row;
   column-gap: 1em;
+}
+
+#menu #opciones a{
+  color: black;
+  text-decoration: none;
+}
+
+#menu #opciones a:hover{
+  color: #C32D2D;
 }
 
 #menu #opciones p{
@@ -461,6 +474,17 @@ body{
   flex-direction: column;
   color: white;
 }
+
+#footer a{
+  color: white;
+  text-decoration: none;
+}
+
+#footer a:hover{
+  color: white;
+  text-decoration: underline;
+}
+
 
 #footer #titulo-footer{
   font-size: 2.5em;
