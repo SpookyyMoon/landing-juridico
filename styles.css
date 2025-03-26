@@ -1,32 +1,39 @@
-/*FUENTES*/
-.abhaya-libre-regular {
-  font-family: "Abhaya Libre", serif;
-  font-weight: 400;
-  font-style: normal;
+/* FUENTE */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Lora&family=Open+Sans&display=swap');
+
+/* Tamaño de fuente en el documento (¿1em = 14px?)*/
+html {
+  font-size: 14px;
 }
 
-.abhaya-libre-medium {
-  font-family: "Abhaya Libre", serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.abhaya-libre-semibold {
-  font-family: "Abhaya Libre", serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.abhaya-libre-bold {
-  font-family: "Abhaya Libre", serif;
+h1{
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-style: normal;
+  font-size: 1.75em;
 }
 
-.abhaya-libre-extrabold {
-  font-family: "Abhaya Libre", serif;
-  font-weight: 800;
-  font-style: normal;
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+h3{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.3em;
+}
+
+.texto {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.boton {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 /*ESTILO*/
@@ -40,7 +47,7 @@ body{
 
 /*HEADER*/
 .social-img{
-  height: 3.5em;
+  height: 3.4em;
 }
 
 #header{
@@ -61,34 +68,27 @@ body{
 #header #contacto #correo{
   display: flex;
   flex-direction: row;
-}
-
-#header #contacto #correo p#correo{
-  font-weight: bold;
-  font-size: 1.1em;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #header #contacto #correo #correo_svg{
   height: 1em;
-  padding-top: 1.3em;
-  padding-right: 0.5em;
+  margin-right: 0.4em;
 }
 
 #header #contacto #telefono{
   display: flex;
   flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #header #contacto #telefono #telefono_svg{
   height: 1em;
-  padding-top: 1.3em;
-  padding-right: 0.5em;
-}
-
-#header #contacto #telefono p#telefono{
-  font-weight: bold;
-  font-size: 1.1em;
-  padding-top: 0.05em;
+  margin-right: 0.4em;
 }
 
 #header #sociales{
@@ -103,16 +103,13 @@ body{
 #header #boton_cita{
   align-content: center;
   background-color: #C32D2D;
+  color: white;
+  text-align: center;
   width: 10%;
 }
 
-#header #boton_cita p{
-  color: white;
-  font-weight: bold;
-  font-size: 1.1em;
-  text-align: center;
-  padding: 0em;
-  margin: 0em;
+#header #boton_cita:hover{
+  background-color: #a32626;
 }
 
 #separador{
@@ -124,21 +121,13 @@ body{
   display: flex;
   flex-direction: row;
   height: 6em;
+  align-items: center;
 }
 
 #menu #logo{
   width: 45%;
-  display: flex;
-  justify-content: center;
-}
-
-#menu #logo p{
-  margin: 0em;
-  padding-top: 1em;
-  font-weight: bold;
-  font-size: 2em;
-  color: #C32D2D;
-  text-shadow: 0em 0.06em 0em #00000044;
+  align-items: center;
+  justify-items: center;
 }
 
 #menu #opciones{
@@ -152,17 +141,13 @@ body{
 #menu #opciones a{
   color: black;
   text-decoration: none;
+  font-size: 1.4em;
+  font-weight: 500;
+  font-family: 'Lora', serif;
 }
 
 #menu #opciones a:hover{
   color: #C32D2D;
-}
-
-#menu #opciones p{
-  margin: 0em;
-  padding-top: 1.5em;
-  font-weight: bold;
-  font-size: 1.5em;
 }
 
 /*HERO*/
@@ -174,7 +159,6 @@ body{
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  justify-content: baseline;
   position: relative;
 }
 
@@ -185,73 +169,69 @@ body{
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.07);
+  background-color: rgba(0, 0, 0, 0.24);
 }
 
-#hero #titulo{
+#hero #hero-titulo{
   position: relative;
   z-index: 2;
   color: white;
-  font-weight: bold;
-  font-size: 1.7em;
-  font-weight: 700;
   margin-left: 12em;
   margin-top: 5em;
-  width: 20em;
+  width: 45em;
 }
 
-#hero #subtitulo{
+#hero #hero-subtitulo{
   position: relative;
   z-index: 2;
   color: white;
-  margin-left: 17em;
-  margin-top: 1em;
-  width: 30em;
-  font-size: 1.2em;
+  margin-left: 12em;
+  width: 45em;
 }
 
 #botonera{
+    z-index: 2;
   width: 20%;
   height: 4em;
   margin-top: 2em;
   display: flex;
   flex-direction: row;
-  margin-left: 24em;
-  color: white;
-  font-weight: bold;
-  font-size: 1em;
-  justify-content: space-evenly;
+  margin-left: 17.5em;
+  justify-content: center;
+  column-gap: 1em;
 }
 
 #botonera #boton1{
-  background-color: #C32D2D;
-  border-radius: 0.5em;
   width: 11em;
-  box-shadow: rgba(255, 255, 255, 0.072) 0em 0em 0.2em;
-  align-content: center;
+  background-color: #C32D2D;
+  border: solid rgba(255, 255, 255, 0) 0.1em;
+  border-radius: 0.5em;
+  color: white;
+  transition: all 0.3s ease;
 }
 
-#botonera #boton1 p{
-  text-align: center;
-  padding: 0em;
-  margin: 0em;
-}
+#botonera #boton1:hover{
+  background-color: #a93226;
+  transform: translateY(-0.3em);
+  box-shadow: 0 0.8em 0.8em rgba(0, 0, 0, 0.3);
 
+}
 
 #botonera #boton2{
+  width: 11em;
+  background-color: #ffffff00;
   border: solid white 0.1em;
   border-radius: 0.5em;
-  width: 11em;
-  box-shadow: rgba(255, 255, 255, 0.072) 0em 0em 0.2em;
-  align-content: center;
+  color: white;
+  transition: all 0.3s ease;
 }
 
-#botonera #boton2 p{
-  text-align: center;
-  padding: 0em;
-  margin: 0em;
+#botonera #boton2:hover{
+  background-color: #ffffffea;
+  color: #c0392b;
+  transform: translateY(-0.3em);
+  box-shadow: 0 0.8em 0.8em rgba(0, 0, 0, 0.3);
 }
-
 
 /*CUERPO*/
 #cuerpo{
@@ -265,17 +245,6 @@ body{
 }
 
 /*SERVICIOS*/
-.contenedor{
-  border: solid black 0.1em;
-  border-radius: 0.8em;
-  width: 20%;
-  height: 2em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
 .titulo-contenedor{
   margin-top: 1em;
   font-size: 1.2em;
@@ -286,7 +255,7 @@ body{
   margin-top: 1em;
 }
 
-.icono-contenedor{
+.img-servicios{
   margin-top: 1em;
   height: 5em;
   width: 5em;
@@ -296,67 +265,43 @@ body{
   align-content: center;
   margin-top: 1em;
   background-color: #c32d2dc7;
+  border: rgba(255, 255, 255, 0) solid;
   color: white;
   border-radius: 1em;
   width: 6em;
   height: 2em;
+  font-size: 1em;
+  text-transform: none;
+  transition: all 0.3s ease;
+}
+
+.boton-contenedor:hover{
+  background-color: #b94747;
+  transform: translateY(-0.3em);
+  box-shadow: 0 0.8em 0.8em rgba(0, 0, 0, 0.3);
+}
+
+.serviciosContenedor{
+  height: 18em;
+  width: 18em;
+  border: solid black 0.1em;
+  border-radius: 0.8em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 #servicios{
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   height: 50em;
   align-content: center;
   width: 80em;
+  column-gap: 3em;
   row-gap: 3em;
-}
-
-#cuerpo #servicios #contenedor1{
-  height: 18em;
-  width: 18em;
-  grid-row: 1;
-  grid-column-start: 1;
-  grid-column-end: 2;
-}
-
-#cuerpo #servicios #contenedor2{
-  height: 18em;
-  width: 18em;
-  grid-row: 1;
-  grid-column-start: 2;
-  grid-column-end: 3;
-}
-
-#cuerpo #servicios #contenedor3{
-  height: 18em;
-  width: 18em;
-  grid-row: 1;
-  grid-column-start: 3;
-  grid-column-end: 4;
-}
-
-#cuerpo #servicios #contenedor4{
-  height: 18em;
-  width: 18em;
-  grid-row: 2;
-  grid-column-start: 1;
-  grid-column-end: 2;
-}
-
-#cuerpo #servicios #contenedor5{
-  height: 18em;
-  width: 18em;
-  grid-row: 2;
-  grid-column-start: 2;
-  grid-column-end: 3;
-}
-
-#cuerpo #servicios #contenedor6{
-  height: 18em;
-  width: 18em;
-  grid-row: 2;
-  grid-column-start: 3;
-  grid-column-end: 4;
 }
 
 /*TESTIMONIALS*/
@@ -373,7 +318,6 @@ body{
   align-items: center;
   justify-content: space-evenly;
   margin-bottom: 2em;
-  font-weight: 600;
 }
 
 .testimonial-exterior{
@@ -387,7 +331,6 @@ body{
 }
 
 .testimonial-interior{
-  border: solid;
   border-radius: 2em;
   background-color: #c32d2dc7;
   color: white;
@@ -407,11 +350,24 @@ body{
 
 .testimonial-nombre{
   margin-top: 1em;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+.testimonial-exterior, .testimonial-interior {
+  transition: all 0.3s ease;
+  border-radius: 2em;
+  box-shadow: 0 0.2em 0.2em rgba(0, 0, 0, 0.322);
+}
+
+.testimonial-exterior:hover, .testimonial-interior:hover {
+  transform: translateY(-2em);
+  box-shadow: 0 0.8em 0.8em rgba(0, 0, 0, 0.3);
 }
 
 /*FAQ*/
 .pregunta{
-  border: solid #706F6F;
+  border: 0.16em solid #706F6F;
   height: 4em;
   border-radius: 1em;
   width: 40;
@@ -430,6 +386,7 @@ body{
 .flecha-faq{
   padding-left: 5em;
   padding-right: 1.5em;
+  width: 2.5em;
 }
 
 #faq{
@@ -442,7 +399,8 @@ body{
 
 #faq #titulo{
   height: 1em;
-  font-size: 6em;
+  font-size: 4em;
+  margin-bottom: 0em;
 }
 
 #faq #contenedor{
@@ -485,12 +443,12 @@ body{
   text-decoration: underline;
 }
 
-
 #footer #titulo-footer{
   font-size: 2.5em;
   font-weight: 800;
   padding-left: 2em;
   padding-top: 0.5em;
+  margin-bottom: 0em;
 }
 
 #footer #contenedor{
@@ -508,23 +466,21 @@ body{
   width: 15em;
 }
 
+p.opcion-footer.texto{
+  margin: 0.15em;
+  padding: 0em;
+}
+
 .titulo-columna{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
   font-size: 1.3em;
-  font-weight: 600;
   width: 15em;
   text-underline-offset: 0.2em;
 }
 
 .opcion-footer{
-  height: 13em;
-  font-size: 1.2em;
-  width: 12em;
-}
-
-p.opcion-footer{
-  margin: 0em;
-  padding: 0em;
-  height: 2em;
+  margin-top: 0.4em;
 }
 
 #contenedor2{
@@ -534,15 +490,13 @@ p.opcion-footer{
   width: 15em;
 }
 
-#contenedor2 #logo{
+#contenedor2 img#logo{
   margin: 0em;
   padding: 0em;
   height: 11em;
 }
 
-#contenedor2 #copyright{
+p#copyright-texto{
   margin: 0em;
-  padding: 0em;
-  height: 5em;
   text-align: center;
 }
