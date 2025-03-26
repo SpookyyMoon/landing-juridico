@@ -278,7 +278,7 @@ body{
 .boton-contenedor:hover{
   background-color: #b94747;
   transform: translateY(-0.3em);
-  box-shadow: 0 0.8em 0.8em rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.3em 0.8em rgba(0, 0, 0, 0.3);
 }
 
 .serviciosContenedor{
@@ -425,6 +425,7 @@ body{
   align-self: center;
 }
 
+/*FOOTER*/
 #footer{
   height: 22em;
   background-color: #c32d2dc7;
