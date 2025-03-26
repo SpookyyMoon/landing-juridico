@@ -121,13 +121,8 @@ body{
   display: flex;
   flex-direction: row;
   height: 6em;
-  align-items: center;
-}
-
-#menu #logo{
-  width: 45%;
-  align-items: center;
-  justify-items: center;
+  align-items:center;
+  justify-content: space-evenly;
 }
 
 #menu #opciones{
@@ -377,7 +372,7 @@ body{
 }
 
 .texto-pregunta{
-  font-size: 1.53em;
+  font-size: 1.2em;
   font-weight: 500em;
   padding-left: 1em;
   width: 38em;
@@ -427,7 +422,7 @@ body{
 
 /*FOOTER*/
 #footer{
-  height: 22em;
+  height: 24em;
   background-color: #c32d2dc7;
   display: flex;
   flex-direction: column;
@@ -478,6 +473,7 @@ p.opcion-footer.texto{
   font-size: 1.3em;
   width: 15em;
   text-underline-offset: 0.2em;
+  margin-bottom: 0.2em;
 }
 
 .opcion-footer{
