@@ -365,24 +365,47 @@ body{
   border: 0.16em solid #706F6F;
   height: 4em;
   border-radius: 1em;
-  width: 40;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  display: block;
+  position: relative;
+  cursor: pointer;
 }
 
 .texto-pregunta{
   font-size: 1.2em;
-  font-weight: 500em;
-  padding-left: 1em;
+  font-weight: 500;
+  padding-left: 1.2em;
   width: 38em;
+  list-style: none;
+  appearance: none;
+  margin-top: 1em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
 }
 
-.flecha-faq{
-  padding-left: 5em;
-  padding-right: 1.5em;
-  width: 2.5em;
+.texto-pregunta::before{
+  content:url(./public/images/keyboard_arrow_down-30.svg);
+  position: absolute;
+  right: 1.5em;
+  top: 1em;
 }
+
+.pregunta[open] {
+  height: auto;
+  min-height: 4em;
+  padding-bottom: 2em; 
+}
+
+[open] .texto-pregunta::before{
+  content: url(./public/images/keyboard_arrow_up-30.png);
+}
+
+.texto-respuesta{
+  font-size: 1em;
+  padding-left: 1.5em;
+  width: 38em;
+  margin-top: 0.5em;
+}
+
 
 #faq{
   display: flex;
