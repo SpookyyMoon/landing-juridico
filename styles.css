@@ -125,6 +125,10 @@ body{
   justify-content: space-evenly;
 }
 
+img#hamburguesa-menu{
+  display: none;
+}
+
 #menu #opciones{
   width: 55%;
   display: flex;
@@ -301,10 +305,7 @@ body{
 
 /*TESTIMONIALS*/
 #testimonials{
-  display: grid;
-  justify-content: space-evenly;
   height: 40em;
-  align-content: center;
   width: 80em;
   row-gap: 3em;
   display: flex;
@@ -519,4 +520,233 @@ p.opcion-footer.texto{
 p#copyright-texto{
   margin: 0em;
   text-align: center;
+}
+
+@media (width < 970px){
+  html,body{
+    font-size: 10px;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  #header, #separador{
+    display: none;
+  }
+
+  #logo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap
+  }
+
+  #logo h1{
+    font-size: small;
+    padding-left: 1em;
+  }
+
+  #menu{
+    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #menu #hamburguesa-menu{
+    display: block;
+    padding-right: 1em;
+  }
+  
+  #menu #opciones{
+    display: none;
+  }
+
+  #hero{
+    height: 40em;
+    width: 100%;
+    justify-content: center;
+    align-items: center;  
+  }
+
+  #hero #hero-titulo{
+    width: 32em;
+    margin: 0em;
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  #hero #hero-subtitulo{
+    width: 32em;
+    margin: 0em;
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  #hero #botonera{
+    margin: 1em 0em 0em 0em;
+    justify-content: center;
+    align-items: center;
+    width: 32em;
+    height: 5em;
+  }
+
+  #botonera #boton1, #botonera #boton2{
+    width: 15em;
+    height: 3em;
+  }
+
+  #cuerpo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    height: 90%;
+  }
+
+  #servicios{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 30em;
+    height: 40%;
+    row-gap: 2em;
+    margin-top: 6em;
+    margin-bottom: 3em;
+  }
+
+  .serviciosContenedor{
+    width: 23em;
+  }
+
+  .boton-contenedor.boton{
+    margin-bottom: 1em;
+  }
+
+  #testimonials{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 30em;
+    height: 80em;
+  }
+
+  .testimonial-texto{
+    margin-top: 1em;
+    width: 15em;
+  }
+  
+  .testimonial-nombre{
+    margin-top: 1em;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .imagen-exterior, .imagen-interior{
+    height: 12em;
+  }
+
+  .testimonial-exterior{
+    height: 23em;
+    width: 24em;
+  }
+
+  .testimonial-interior{
+    height: 23em;
+    width: 24em;
+  }
+  
+  .testimonial-exterior:hover, .testimonial-interior:hover {
+    display: none;
+  }
+
+  #faq{
+    display: flex;
+    flex-direction: column;
+    width: 30em;
+    padding: 0em;
+    align-items: center;
+  }
+
+  #faq #contenedor{
+    width: 30em;
+    padding: 0em;
+    margin: 0em;
+    justify-content: space-around;
+  }
+
+  #preguntas{
+    width: 26em;
+    align-content: center;
+    margin: 2em 0em;
+  }
+
+  .pregunta{
+    display: flex;
+    flex-direction: row;
+    width: 26em;
+    align-items: center;
+    text-justify: center;
+  }
+
+  .texto-pregunta{
+    font-size: 1.2em;
+    font-weight: 500;
+    width: 20em;
+    list-style: none;
+    appearance: none;
+    margin-top: 0em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+  }
+  
+  .texto-pregunta::before{
+    content:url();
+    position: absolute;
+    right: 1.5em;
+    top: 1em;
+  }
+  
+  .pregunta[open] {
+    height: auto;
+    min-height: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  [open] .texto-pregunta::before{
+    content: url();
+  }
+  
+  .texto-respuesta{
+    font-size: 1em;
+    width: 20em;
+  }
+
+  #imagen-faq{
+    display: none;
+  }
+
+  #footer{
+    width: 100%;
+    height: 50em
+  }
+
+  #footer #titulo-footer{
+    padding: 0em;
+    font-size: 1.7em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+  }
+
+  #footer #contenedor{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    align-items: baseline;
+    margin-left: 2em;
+  }
+  
+  #contenedor2{
+    width: 100%;
+    align-items: center;
+  }
 }
