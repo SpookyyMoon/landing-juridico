@@ -125,6 +125,10 @@ body{
   justify-content: space-evenly;
 }
 
+#menu #logo #hamburguesa-menu{
+  display: none;
+}
+
 #menu #opciones{
   width: 55%;
   display: flex;
@@ -519,4 +523,93 @@ p.opcion-footer.texto{
 p#copyright-texto{
   margin: 0em;
   text-align: center;
+}
+
+@media (width < 970px){
+  html,body{
+    font-size: 10px;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  #header{
+    display: none;
+  }
+
+  #separador{
+    display: none;
+  }
+
+  #logo{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #logo h1{
+    font-size: small;
+    padding-left: 1em;
+  }
+
+  #menu{
+    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #menu #hamburguesa-menu{
+    padding-right: 1em;
+  }
+  
+  #menu #opciones{
+    display: none;
+  }
+
+  #hero{
+    height: 40em;
+    width: 100%;
+    justify-content: center;
+    align-items: center;  
+  }
+
+  #hero #hero-titulo{
+    width: 32em;
+    margin: 0em;
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  #hero #hero-subtitulo{
+    width: 32em;
+    margin: 0em;
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  #hero #botonera{
+    margin: 1em 0em 0em 0em;
+    justify-content: center;
+    align-items: center;
+    width: 32em;
+    height: 5em;
+  }
+
+  #botonera #boton1, #botonera #boton2{
+    width: 15em;
+    height: 3em;
+  }
+
+  #servicios{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    width: 20em;
+    margin-top: 2em;
+    align-items: center;
+  }
+
+  .serviciosContenedor{
+    width: 30em;
+    height: 30m;
+  }
+  
 }
