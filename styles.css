@@ -125,7 +125,7 @@ body{
   justify-content: space-evenly;
 }
 
-#menu #logo #hamburguesa-menu{
+img#hamburguesa-menu{
   display: none;
 }
 
@@ -305,10 +305,7 @@ body{
 
 /*TESTIMONIALS*/
 #testimonials{
-  display: grid;
-  justify-content: space-evenly;
   height: 40em;
-  align-content: center;
   width: 80em;
   row-gap: 3em;
   display: flex;
@@ -532,17 +529,14 @@ p#copyright-texto{
     width: 100%;
   }
 
-  #header{
-    display: none;
-  }
-
-  #separador{
+  #header, #separador{
     display: none;
   }
 
   #logo{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap
   }
 
   #logo h1{
@@ -557,6 +551,7 @@ p#copyright-texto{
   }
 
   #menu #hamburguesa-menu{
+    display: block;
     padding-right: 1em;
   }
   
@@ -598,18 +593,139 @@ p#copyright-texto{
     height: 3em;
   }
 
+  #cuerpo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
   #servicios{
     flex-direction: column;
     flex-wrap: nowrap;
-    align-content: center;
-    width: 20em;
-    margin-top: 2em;
     align-items: center;
+    width: 30em;
+    height: 40%;
+    row-gap: 2em;
+    margin-top: 3em;
+    margin-bottom: 3em;
   }
 
   .serviciosContenedor{
+    width: 23em;
+  }
+
+  .boton-contenedor.boton{
+    margin-bottom: 1em;
+  }
+
+  #testimonials{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     width: 30em;
-    height: 30m;
+    height: 80em;
+  }
+
+  .testimonial-texto{
+    margin-top: 1em;
+    width: 15em;
+  }
+  
+  .testimonial-nombre{
+    margin-top: 1em;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .imagen-exterior, .imagen-interior{
+    height: 12em;
+  }
+
+  .testimonial-exterior{
+    height: 23em;
+    width: 24em;
+  }
+
+  .testimonial-interior{
+    height: 23em;
+    width: 24em;
+  }
+  
+  .testimonial-exterior:hover, .testimonial-interior:hover {
+    display: none;
+  }
+
+  #faq{
+    display: flex;
+    flex-direction: column;
+    width: 30em;
+    padding: 0em;
+  }
+
+  #faq #contenedor{
+    width: 30em;
+    padding: 0em;
+    margin: 0em;
+    justify-content: space-around;
+  }
+
+  #preguntas{
+    width: 26em;
+    align-content: center;
+    margin: 1em 0em;
+  }
+
+  .pregunta{
+    display: flex;
+    flex-direction: row;
+    width: 26em;
+    align-items: center;
+    text-justify: center;
+  }
+
+  .texto-pregunta{
+    font-size: 1.2em;
+    font-weight: 500;
+    width: 20em;
+    list-style: none;
+    appearance: none;
+    margin-top: 0em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+  }
+  
+  .texto-pregunta::before{
+    content:url();
+    position: absolute;
+    right: 1.5em;
+    top: 1em;
+  }
+  
+  .pregunta[open] {
+    height: auto;
+    min-height: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  [open] .texto-pregunta::before{
+    content: url();
+  }
+  
+  .texto-respuesta{
+    font-size: 1em;
+    width: 20em;
+  }
+
+  #imagen-faq{
+    display: none;
+  }
+
+  #footer{
+    display: none;
   }
   
 }
